@@ -1146,7 +1146,8 @@ checksum = "37909eebbb50d72f9059c3b6d82c0463f2ff062c9e95845c43a6c9c0355411be"
 [[package]]
 name = "file-id"
 version = "0.2.3"
-source = "git+https://github.com/sapphi-red/notify?rev=refs%2Fheads%2Fpatches#772dce88b7acf4b02a7da02fb409001cff234676"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "e1fc6a637b6dc58414714eddd9170ff187ecb0933d4c7024d1abbd23a3cc26e9"
 dependencies = [
  "windows-sys 0.60.2",
 ]
@@ -1948,7 +1949,8 @@ checksum = "610a5acd306ec67f907abe5567859a3c693fb9886eb1f012ab8f2a47bef3db51"
 [[package]]
 name = "notify"
 version = "8.2.0"
-source = "git+https://github.com/sapphi-red/notify?rev=refs%2Fheads%2Fpatches#772dce88b7acf4b02a7da02fb409001cff234676"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "4d3d07927151ff8575b7087f245456e549fea62edf0ec4e565a5ee50c8402bc3"
 dependencies = [
  "bitflags 2.9.4",
  "fsevent-sys",
@@ -1965,7 +1967,8 @@ dependencies = [
 [[package]]
 name = "notify-debouncer-full"
 version = "0.6.0"
-source = "git+https://github.com/sapphi-red/notify?rev=refs%2Fheads%2Fpatches#772dce88b7acf4b02a7da02fb409001cff234676"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "375bd3a138be7bfeff3480e4a623df4cbfb55b79df617c055cd810ba466fa078"
 dependencies = [
  "file-id",
  "log",
@@ -1977,7 +1980,8 @@ dependencies = [
 [[package]]
 name = "notify-types"
 version = "2.0.0"
-source = "git+https://github.com/sapphi-red/notify?rev=refs%2Fheads%2Fpatches#772dce88b7acf4b02a7da02fb409001cff234676"
+source = "registry+https://github.com/rust-lang/crates.io-index"
+checksum = "5e0826a989adedc2a244799e823aece04662b66609d96af8dff7ac6df9a8925d"
 
 [[package]]
 name = "nu-ansi-term"
