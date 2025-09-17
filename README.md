@@ -1,3 +1,16 @@
+> [!WARNING]
+> This is a fork of the [Rolldown](https://rolldown.rs/) project. It is not officially maintained by the Rolldown team. The main purpose is to publish the rolldown crate to crates.io (renamed as `deskulpt_rolldown`) because the Rolldown team has no plan in doing so. See [rolldown/rolldown#3227](https://github.com/rolldown/rolldown/issues/3227) for more details.
+>
+> ![crates.io/deskulpt_rolldown](https://img.shields.io/crates/v/deskulpt_rolldown?label=deskulpt_rolldown)
+>
+> **Release schedule:** PRs are automatically opened/updated nightly to sync this fork with upstream. However, releases are not made on demand rather than on a regular basis. If one needs a release that include new upstream commits, please feel free to **open an issue**.
+>
+> **Versioning:** `deskulpt_rolldown` and related rolldown crates will be consistently versioned. They will stay with `0.x.0` versions, each time bumping the minor version to indicate that these are not production-ready and breaking changes may happen. Note that these crates do not follow the versioning of the [rolldown](https://www.npmjs.com/package/rolldown) npm package.
+
+---
+
+<sup>The following is the original README:</sup>
+
 <p align="center">
   <a href="https://rolldown.rs" target="_blank" rel="noopener noreferrer">
     <img width="180" src="https://rolldown.rs/rolldown-round.svg" alt="Rolldown logo">

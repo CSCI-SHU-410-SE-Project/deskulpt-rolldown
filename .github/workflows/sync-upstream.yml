@@ -21,8 +21,8 @@ jobs:
       - name: Update or create PR
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PR_BRANCH: 'sync/upstream-main'
-          PR_TITLE: '🔄 Sync with upstream (rolldown/rolldown)'
+          PR_BRANCH: 'sync/rolldown-main'
+          PR_TITLE: 'deskulpt: sync with rolldown/rolldown'
         run: |
           git remote add upstream https://github.com/rolldown/rolldown.git
           git fetch upstream
