@@ -15,4 +15,4 @@ doctest = false
 workspace = true
 
 [dependencies]
-rolldown_plugin = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }

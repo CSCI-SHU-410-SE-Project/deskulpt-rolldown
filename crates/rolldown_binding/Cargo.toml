@@ -29,12 +29,12 @@ oxc_minify_napi = { workspace = true }
 oxc_parser_napi = { workspace = true }
 oxc_resolver_napi = { workspace = true }
 oxc_transform_napi = { workspace = true }
-rolldown = { workspace = true }
+deskulpt_rolldown = { workspace = true }
 rolldown_binding_watcher = { workspace = true }
-rolldown_common = { workspace = true }
-rolldown_debug = { workspace = true }
-rolldown_error = { workspace = true, features = ["napi"] }
-rolldown_plugin = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_debug = { workspace = true }
+deskulpt_rolldown_error = { workspace = true, features = ["napi"] }
+deskulpt_rolldown_plugin = { workspace = true }
 rolldown_plugin_alias = { workspace = true }
 rolldown_plugin_asset = { workspace = true }
 rolldown_plugin_asset_import_meta_url = { workspace = true }
@@ -56,9 +56,9 @@ rolldown_plugin_vite_resolve = { workspace = true }
 rolldown_plugin_wasm_fallback = { workspace = true }
 rolldown_plugin_wasm_helper = { workspace = true }
 rolldown_plugin_web_worker_post = { workspace = true }
-rolldown_sourcemap = { workspace = true }
-rolldown_tracing = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_sourcemap = { workspace = true }
+deskulpt_rolldown_tracing = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 tracing = { workspace = true }
 url = { workspace = true }

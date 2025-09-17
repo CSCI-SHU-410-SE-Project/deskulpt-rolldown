@@ -1,15 +1,14 @@
 [package]
-name = "rolldown_utils"
+name = "deskulpt_rolldown_utils"
 version = "0.1.0"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
+description = "[FORK] Rolldown's rolldown_utils crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
 
 [lib]
+name = "rolldown_utils"
 doctest = false
 
 [[bench]]
@@ -41,7 +40,7 @@ oxc_index = { workspace = true }
 phf = { workspace = true, features = ["macros"] }
 regex = { workspace = true }
 regress = { workspace = true }
-rolldown_std_utils = { workspace = true }
+deskulpt_rolldown_std_utils = { workspace = true }
 rustc-hash = { workspace = true }
 serde_json = { workspace = true }
 simdutf8 = { workspace = true }

@@ -1,19 +1,21 @@
 [package]
-name = "rolldown_plugin_oxc_runtime"
+name = "deskulpt_rolldown_plugin_oxc_runtime"
 version = "0.1.0"
+description = "[FORK] Rolldown's rolldown_plugin_oxc_runtime crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
 
 [lib]
+name = "rolldown_plugin_oxc_runtime"
 doctest = false
 
 [dependencies]
 arcstr = { workspace = true }
 phf = { workspace = true }
-rolldown_plugin = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 
 [build-dependencies]
 oxc_resolver = { workspace = true }

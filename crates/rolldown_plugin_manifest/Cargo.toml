@@ -17,9 +17,9 @@ anyhow = { workspace = true }
 arcstr = { workspace = true }
 cow-utils = { workspace = true }
 derive_more = { workspace = true }
-rolldown_common = { workspace = true }
-rolldown_plugin = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 serde = { workspace = true, features = ["rc"] }
 serde_json = { workspace = true }

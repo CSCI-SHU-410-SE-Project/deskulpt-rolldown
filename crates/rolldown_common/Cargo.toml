@@ -1,8 +1,7 @@
 [package]
-name = "rolldown_common"
+name = "deskulpt_rolldown_common"
 version = "0.1.0"
-description = "This crate is mostly for sharing code between rolldwon crates."
-
+description = "[FORK] Rolldown's rolldown_common crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
@@ -11,6 +10,7 @@ repository.workspace = true
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
+name = "rolldown_common"
 doctest = false
 
 [lints]
@@ -28,11 +28,11 @@ oxc = { workspace = true }
 oxc_ecmascript = { workspace = true }
 oxc_index = { workspace = true }
 oxc_resolver = { workspace = true }
-rolldown_ecmascript = { workspace = true }
-rolldown_error = { workspace = true }
-rolldown_sourcemap = { workspace = true }
-rolldown_std_utils = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_ecmascript = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
+deskulpt_rolldown_sourcemap = { workspace = true }
+deskulpt_rolldown_std_utils = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 schemars = { workspace = true, optional = true }
 serde = { workspace = true, features = ["derive"], optional = true }

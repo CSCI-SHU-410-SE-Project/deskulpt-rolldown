@@ -16,4 +16,4 @@ workspace = true
 
 [dependencies]
 memchr = { workspace = true }
-rolldown_plugin = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }

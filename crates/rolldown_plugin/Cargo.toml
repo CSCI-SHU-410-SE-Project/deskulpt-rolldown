@@ -1,14 +1,14 @@
 [package]
-name = "rolldown_plugin"
+name = "deskulpt_rolldown_plugin"
 version = "0.1.0"
+description = "[FORK] Rolldown's rolldown_plugin crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
 
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
 [lib]
+name = "rolldown_plugin"
 doctest = false
 
 [features]
@@ -26,13 +26,13 @@ bitflags = { workspace = true }
 dashmap = { workspace = true }
 derive_more = { workspace = true, features = ["display"] }
 oxc_index = { workspace = true }
-rolldown_common = { workspace = true }
-rolldown_debug = { workspace = true }
-rolldown_ecmascript = { workspace = true }
-rolldown_error = { workspace = true }
-rolldown_resolver = { workspace = true }
-rolldown_sourcemap = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_debug = { workspace = true }
+deskulpt_rolldown_ecmascript = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
+deskulpt_rolldown_resolver = { workspace = true }
+deskulpt_rolldown_sourcemap = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 serde = { workspace = true, optional = true }
 serde_json = { workspace = true }

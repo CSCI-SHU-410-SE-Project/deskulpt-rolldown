@@ -23,10 +23,10 @@ insta = { workspace = true }
 json-strip-comments = { workspace = true }
 jsonschema = { workspace = true }
 regex = { workspace = true }
-rolldown = { workspace = true }
-rolldown_common = { workspace = true }
-rolldown_error = { workspace = true }
-rolldown_sourcemap = { workspace = true }
+deskulpt_rolldown = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
+deskulpt_rolldown_sourcemap = { workspace = true }
 rolldown_testing_config = { workspace = true }
 rolldown_workspace = { workspace = true }
 rustc-hash = { workspace = true }

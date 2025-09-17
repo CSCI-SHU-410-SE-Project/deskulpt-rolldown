@@ -16,5 +16,5 @@ workspace = true
 
 [dependencies]
 oxc = { workspace = true }
-rolldown_ecmascript_utils = { workspace = true }
-rolldown_plugin = { workspace = true }
+deskulpt_rolldown_ecmascript_utils = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }

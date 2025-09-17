@@ -15,8 +15,8 @@ crate-type = ["lib", "cdylib"]
 doctest = false
 
 [dependencies]
-rolldown_error = { workspace = true }
-rolldown_watcher = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
+deskulpt_rolldown_watcher = { workspace = true }
 
 # --- NAPI-RS required ---
 napi = { workspace = true }

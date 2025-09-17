@@ -173,8 +173,8 @@ name = "bench"
 version = "0.1.0"
 dependencies = [
  "criterion2",
- "rolldown",
- "rolldown_common",
+ "deskulpt_rolldown",
+ "deskulpt_rolldown_common",
  "rolldown_testing",
  "rolldown_workspace",
  "tokio",
@@ -646,6 +646,317 @@ dependencies = [
  "quote",
  "syn",
  "unicode-xid",
+]
+
+[[package]]
+name = "deskulpt_rolldown"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "append-only-vec",
+ "arcstr",
+ "bitflags 2.9.4",
+ "commondir",
+ "css-module-lexer",
+ "derive_more",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_debug",
+ "deskulpt_rolldown_ecmascript",
+ "deskulpt_rolldown_ecmascript_utils",
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_fs",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_plugin_chunk_import_map",
+ "deskulpt_rolldown_plugin_data_uri",
+ "deskulpt_rolldown_plugin_hmr",
+ "deskulpt_rolldown_plugin_oxc_runtime",
+ "deskulpt_rolldown_resolver",
+ "deskulpt_rolldown_sourcemap",
+ "deskulpt_rolldown_std_utils",
+ "deskulpt_rolldown_tracing",
+ "deskulpt_rolldown_utils",
+ "deskulpt_rolldown_watcher",
+ "dunce",
+ "futures",
+ "glob",
+ "indexmap",
+ "insta",
+ "itertools",
+ "itoa",
+ "memchr",
+ "notify",
+ "oxc",
+ "oxc_allocator",
+ "oxc_ecmascript",
+ "oxc_index",
+ "oxc_traverse",
+ "petgraph",
+ "rayon",
+ "rolldown_testing",
+ "rolldown_workspace",
+ "rustc-hash",
+ "serde",
+ "serde_json",
+ "string_wizard",
+ "sugar_path",
+ "testing_macros",
+ "tokio",
+ "tracing",
+ "url",
+ "xxhash-rust",
+]
+
+[[package]]
+name = "deskulpt_rolldown_common"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "arcstr",
+ "bitflags 2.9.4",
+ "dashmap",
+ "derive_more",
+ "deskulpt_rolldown_ecmascript",
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_sourcemap",
+ "deskulpt_rolldown_std_utils",
+ "deskulpt_rolldown_utils",
+ "fast-glob",
+ "itertools",
+ "num-bigint",
+ "oxc",
+ "oxc_ecmascript",
+ "oxc_index",
+ "oxc_resolver",
+ "rustc-hash",
+ "schemars",
+ "serde",
+ "serde_json",
+ "string_wizard",
+ "sugar_path",
+ "tokio",
+]
+
+[[package]]
+name = "deskulpt_rolldown_debug"
+version = "0.1.0"
+dependencies = [
+ "blake3",
+ "dashmap",
+ "rolldown_debug_action",
+ "rustc-hash",
+ "serde",
+ "serde_json",
+ "tracing",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "deskulpt_rolldown_ecmascript"
+version = "0.1.0"
+dependencies = [
+ "arcstr",
+ "deskulpt_rolldown_error",
+ "oxc",
+ "oxc_sourcemap",
+ "self_cell",
+]
+
+[[package]]
+name = "deskulpt_rolldown_ecmascript_utils"
+version = "0.1.0"
+dependencies = [
+ "deskulpt_rolldown_common",
+ "oxc",
+ "smallvec",
+]
+
+[[package]]
+name = "deskulpt_rolldown_error"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "arcstr",
+ "bitflags 2.9.4",
+ "derive_more",
+ "deskulpt_rolldown_utils",
+ "heck",
+ "napi",
+ "oxc",
+ "oxc_resolver",
+ "rolldown-ariadne",
+ "ropey",
+ "rustc-hash",
+ "sugar_path",
+]
+
+[[package]]
+name = "deskulpt_rolldown_fs"
+version = "0.1.0"
+dependencies = [
+ "oxc_resolver",
+ "vfs",
+]
+
+[[package]]
+name = "deskulpt_rolldown_plugin"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "arcstr",
+ "async-trait",
+ "bitflags 2.9.4",
+ "dashmap",
+ "derive_more",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_debug",
+ "deskulpt_rolldown_ecmascript",
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_resolver",
+ "deskulpt_rolldown_sourcemap",
+ "deskulpt_rolldown_utils",
+ "oxc_index",
+ "rustc-hash",
+ "serde",
+ "serde_json",
+ "string_wizard",
+ "sugar_path",
+ "tokio",
+ "tracing",
+ "typedmap",
+]
+
+[[package]]
+name = "deskulpt_rolldown_plugin_chunk_import_map"
+version = "0.1.0"
+dependencies = [
+ "arcstr",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
+ "rustc-hash",
+ "serde_json",
+ "xxhash-rust",
+]
+
+[[package]]
+name = "deskulpt_rolldown_plugin_data_uri"
+version = "0.1.0"
+dependencies = [
+ "arcstr",
+ "base64-simd",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
+ "urlencoding",
+]
+
+[[package]]
+name = "deskulpt_rolldown_plugin_hmr"
+version = "0.1.0"
+dependencies = [
+ "arcstr",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "oxc",
+]
+
+[[package]]
+name = "deskulpt_rolldown_plugin_oxc_runtime"
+version = "0.1.0"
+dependencies = [
+ "arcstr",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
+ "oxc_resolver",
+ "phf",
+]
+
+[[package]]
+name = "deskulpt_rolldown_resolver"
+version = "0.1.0"
+dependencies = [
+ "arcstr",
+ "dashmap",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_fs",
+ "deskulpt_rolldown_utils",
+ "itertools",
+ "oxc_resolver",
+ "sugar_path",
+]
+
+[[package]]
+name = "deskulpt_rolldown_sourcemap"
+version = "0.1.0"
+dependencies = [
+ "criterion2",
+ "deskulpt_rolldown_utils",
+ "memchr",
+ "oxc",
+ "oxc_sourcemap",
+ "rustc-hash",
+]
+
+[[package]]
+name = "deskulpt_rolldown_std_utils"
+version = "0.1.0"
+dependencies = [
+ "regex",
+]
+
+[[package]]
+name = "deskulpt_rolldown_tracing"
+version = "0.1.0"
+dependencies = [
+ "tracing",
+ "tracing-chrome",
+ "tracing-subscriber",
+]
+
+[[package]]
+name = "deskulpt_rolldown_utils"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "arcstr",
+ "async-scoped",
+ "base-encode",
+ "base64-simd",
+ "cow-utils",
+ "criterion2",
+ "dashmap",
+ "deskulpt_rolldown_std_utils",
+ "fast-glob",
+ "form_urlencoded",
+ "futures",
+ "indexmap",
+ "infer",
+ "itoa",
+ "memchr",
+ "mime",
+ "nom",
+ "oxc",
+ "oxc_index",
+ "phf",
+ "rayon",
+ "regex",
+ "regress",
+ "rustc-hash",
+ "serde_json",
+ "simdutf8",
+ "sugar_path",
+ "tokio",
+ "uuid",
+ "xxhash-rust",
+]
+
+[[package]]
+name = "deskulpt_rolldown_watcher"
+version = "0.1.0"
+dependencies = [
+ "deskulpt_rolldown_error",
+ "notify",
+ "notify-debouncer-full",
 ]
 
 [[package]]
@@ -2682,64 +2993,6 @@ source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "ba39f3699c378cd8970968dcbff9c43159ea4cfbd88d43c00b22f2ef10a435d2"
 
 [[package]]
-name = "rolldown"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "append-only-vec",
- "arcstr",
- "bitflags 2.9.4",
- "commondir",
- "css-module-lexer",
- "derive_more",
- "dunce",
- "futures",
- "glob",
- "indexmap",
- "insta",
- "itertools",
- "itoa",
- "memchr",
- "notify",
- "oxc",
- "oxc_allocator",
- "oxc_ecmascript",
- "oxc_index",
- "oxc_traverse",
- "petgraph",
- "rayon",
- "rolldown_common",
- "rolldown_debug",
- "rolldown_ecmascript",
- "rolldown_ecmascript_utils",
- "rolldown_error",
- "rolldown_fs",
- "rolldown_plugin",
- "rolldown_plugin_chunk_import_map",
- "rolldown_plugin_data_uri",
- "rolldown_plugin_hmr",
- "rolldown_plugin_oxc_runtime",
- "rolldown_resolver",
- "rolldown_sourcemap",
- "rolldown_std_utils",
- "rolldown_testing",
- "rolldown_tracing",
- "rolldown_utils",
- "rolldown_watcher",
- "rolldown_workspace",
- "rustc-hash",
- "serde",
- "serde_json",
- "string_wizard",
- "sugar_path",
- "testing_macros",
- "tokio",
- "tracing",
- "url",
- "xxhash-rust",
-]
-
-[[package]]
 name = "rolldown-ariadne"
 version = "0.5.3"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -2758,6 +3011,14 @@ dependencies = [
  "async-channel",
  "dashmap",
  "derive_more",
+ "deskulpt_rolldown",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_debug",
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_sourcemap",
+ "deskulpt_rolldown_tracing",
+ "deskulpt_rolldown_utils",
  "futures",
  "itertools",
  "mimalloc-safe",
@@ -2769,12 +3030,7 @@ dependencies = [
  "oxc_parser_napi",
  "oxc_resolver_napi",
  "oxc_transform_napi",
- "rolldown",
  "rolldown_binding_watcher",
- "rolldown_common",
- "rolldown_debug",
- "rolldown_error",
- "rolldown_plugin",
  "rolldown_plugin_alias",
  "rolldown_plugin_asset",
  "rolldown_plugin_asset_import_meta_url",
@@ -2796,9 +3052,6 @@ dependencies = [
  "rolldown_plugin_wasm_fallback",
  "rolldown_plugin_wasm_helper",
  "rolldown_plugin_web_worker_post",
- "rolldown_sourcemap",
- "rolldown_tracing",
- "rolldown_utils",
  "rustc-hash",
  "tracing",
  "url",
@@ -2808,55 +3061,11 @@ dependencies = [
 name = "rolldown_binding_watcher"
 version = "0.1.0"
 dependencies = [
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_watcher",
  "napi",
  "napi-build",
  "napi-derive",
- "rolldown_error",
- "rolldown_watcher",
-]
-
-[[package]]
-name = "rolldown_common"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "arcstr",
- "bitflags 2.9.4",
- "dashmap",
- "derive_more",
- "fast-glob",
- "itertools",
- "num-bigint",
- "oxc",
- "oxc_ecmascript",
- "oxc_index",
- "oxc_resolver",
- "rolldown_ecmascript",
- "rolldown_error",
- "rolldown_sourcemap",
- "rolldown_std_utils",
- "rolldown_utils",
- "rustc-hash",
- "schemars",
- "serde",
- "serde_json",
- "string_wizard",
- "sugar_path",
- "tokio",
-]
-
-[[package]]
-name = "rolldown_debug"
-version = "0.1.0"
-dependencies = [
- "blake3",
- "dashmap",
- "rolldown_debug_action",
- "rustc-hash",
- "serde",
- "serde_json",
- "tracing",
- "tracing-subscriber",
 ]
 
 [[package]]
@@ -2868,86 +3077,11 @@ dependencies = [
 ]
 
 [[package]]
-name = "rolldown_ecmascript"
-version = "0.1.0"
-dependencies = [
- "arcstr",
- "oxc",
- "oxc_sourcemap",
- "rolldown_error",
- "self_cell",
-]
-
-[[package]]
-name = "rolldown_ecmascript_utils"
-version = "0.1.0"
-dependencies = [
- "oxc",
- "rolldown_common",
- "smallvec",
-]
-
-[[package]]
-name = "rolldown_error"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "arcstr",
- "bitflags 2.9.4",
- "derive_more",
- "heck",
- "napi",
- "oxc",
- "oxc_resolver",
- "rolldown-ariadne",
- "rolldown_utils",
- "ropey",
- "rustc-hash",
- "sugar_path",
-]
-
-[[package]]
 name = "rolldown_filter_analyzer"
 version = "0.1.0"
 dependencies = [
+ "deskulpt_rolldown_ecmascript",
  "oxc",
- "rolldown_ecmascript",
-]
-
-[[package]]
-name = "rolldown_fs"
-version = "0.1.0"
-dependencies = [
- "oxc_resolver",
- "vfs",
-]
-
-[[package]]
-name = "rolldown_plugin"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "arcstr",
- "async-trait",
- "bitflags 2.9.4",
- "dashmap",
- "derive_more",
- "oxc_index",
- "rolldown_common",
- "rolldown_debug",
- "rolldown_ecmascript",
- "rolldown_error",
- "rolldown_resolver",
- "rolldown_sourcemap",
- "rolldown_utils",
- "rustc-hash",
- "serde",
- "serde_json",
- "string_wizard",
- "sugar_path",
- "tokio",
- "tracing",
- "typedmap",
 ]
 
 [[package]]
@@ -2955,8 +3089,8 @@ name = "rolldown_plugin_alias"
 version = "0.1.0"
 dependencies = [
  "cow-utils",
- "rolldown_plugin",
- "rolldown_utils",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
 ]
 
 [[package]]
@@ -2966,10 +3100,10 @@ dependencies = [
  "arcstr",
  "cow-utils",
  "derive_more",
- "rolldown_common",
- "rolldown_plugin",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "rolldown_plugin_utils",
- "rolldown_utils",
  "serde_json",
 ]
 
@@ -2977,7 +3111,7 @@ dependencies = [
 name = "rolldown_plugin_asset_import_meta_url"
 version = "0.1.0"
 dependencies = [
- "rolldown_plugin",
+ "deskulpt_rolldown_plugin",
 ]
 
 [[package]]
@@ -2985,35 +3119,10 @@ name = "rolldown_plugin_build_import_analysis"
 version = "0.1.0"
 dependencies = [
  "arcstr",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_ecmascript_utils",
+ "deskulpt_rolldown_plugin",
  "oxc",
- "rolldown_common",
- "rolldown_ecmascript_utils",
- "rolldown_plugin",
-]
-
-[[package]]
-name = "rolldown_plugin_chunk_import_map"
-version = "0.1.0"
-dependencies = [
- "arcstr",
- "rolldown_common",
- "rolldown_plugin",
- "rolldown_utils",
- "rustc-hash",
- "serde_json",
- "xxhash-rust",
-]
-
-[[package]]
-name = "rolldown_plugin_data_uri"
-version = "0.1.0"
-dependencies = [
- "arcstr",
- "base64-simd",
- "rolldown_common",
- "rolldown_plugin",
- "rolldown_utils",
- "urlencoding",
 ]
 
 [[package]]
@@ -3024,10 +3133,10 @@ dependencies = [
  "arcstr",
  "cow-utils",
  "derive_more",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "memchr",
  "oxc",
- "rolldown_plugin",
- "rolldown_utils",
  "sugar_path",
 ]
 
@@ -3035,33 +3144,23 @@ dependencies = [
 name = "rolldown_plugin_esm_external_require"
 version = "0.1.0"
 dependencies = [
- "rolldown_common",
- "rolldown_plugin",
- "rolldown_utils",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "rustc-hash",
-]
-
-[[package]]
-name = "rolldown_plugin_hmr"
-version = "0.1.0"
-dependencies = [
- "arcstr",
- "oxc",
- "rolldown_common",
- "rolldown_plugin",
 ]
 
 [[package]]
 name = "rolldown_plugin_import_glob"
 version = "0.1.0"
 dependencies = [
+ "deskulpt_rolldown_ecmascript_utils",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "fast-glob",
  "itoa",
  "oxc",
- "rolldown_ecmascript_utils",
- "rolldown_plugin",
  "rolldown_plugin_utils",
- "rolldown_utils",
  "sugar_path",
  "walkdir",
 ]
@@ -3071,12 +3170,12 @@ name = "rolldown_plugin_isolated_declaration"
 version = "0.1.0"
 dependencies = [
  "arcstr",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "oxc",
- "rolldown_common",
- "rolldown_error",
- "rolldown_plugin",
  "rolldown_testing",
- "rolldown_utils",
  "sugar_path",
  "testing_macros",
 ]
@@ -3085,12 +3184,12 @@ dependencies = [
 name = "rolldown_plugin_json"
 version = "0.1.0"
 dependencies = [
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_sourcemap",
+ "deskulpt_rolldown_utils",
  "memchr",
- "rolldown_common",
- "rolldown_plugin",
  "rolldown_plugin_utils",
- "rolldown_sourcemap",
- "rolldown_utils",
  "serde_json",
 ]
 
@@ -3098,8 +3197,8 @@ dependencies = [
 name = "rolldown_plugin_load_fallback"
 version = "0.1.0"
 dependencies = [
+ "deskulpt_rolldown_plugin",
  "memchr",
- "rolldown_plugin",
 ]
 
 [[package]]
@@ -3110,9 +3209,9 @@ dependencies = [
  "arcstr",
  "cow-utils",
  "derive_more",
- "rolldown_common",
- "rolldown_plugin",
- "rolldown_utils",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "rustc-hash",
  "serde",
  "serde_json",
@@ -3123,19 +3222,8 @@ name = "rolldown_plugin_module_preload_polyfill"
 version = "0.1.0"
 dependencies = [
  "arcstr",
- "rolldown_common",
- "rolldown_plugin",
-]
-
-[[package]]
-name = "rolldown_plugin_oxc_runtime"
-version = "0.1.0"
-dependencies = [
- "arcstr",
- "oxc_resolver",
- "phf",
- "rolldown_plugin",
- "rolldown_utils",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
 ]
 
 [[package]]
@@ -3143,22 +3231,22 @@ name = "rolldown_plugin_react_refresh_wrapper"
 version = "0.1.0"
 dependencies = [
  "arcstr",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "memchr",
  "regex",
- "rolldown_plugin",
  "rolldown_plugin_utils",
- "rolldown_utils",
 ]
 
 [[package]]
 name = "rolldown_plugin_replace"
 version = "0.1.0"
 dependencies = [
+ "deskulpt_rolldown",
+ "deskulpt_rolldown_plugin",
  "oxc",
  "regex",
  "regress",
- "rolldown",
- "rolldown_plugin",
  "rolldown_testing",
  "rustc-hash",
  "string_wizard",
@@ -3170,12 +3258,12 @@ name = "rolldown_plugin_reporter"
 version = "0.1.0"
 dependencies = [
  "cow-utils",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
  "flate2",
  "itoa",
  "num-format",
  "rayon",
- "rolldown_common",
- "rolldown_plugin",
  "rolldown_plugin_utils",
  "sugar_path",
  "terminal_size",
@@ -3187,14 +3275,14 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "arcstr",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "itertools",
  "memchr",
  "oxc",
- "rolldown_common",
- "rolldown_error",
- "rolldown_plugin",
  "rolldown_plugin_utils",
- "rolldown_utils",
 ]
 
 [[package]]
@@ -3204,12 +3292,12 @@ dependencies = [
  "anyhow",
  "arcstr",
  "cow-utils",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "itertools",
  "memchr",
  "percent-encoding",
- "rolldown_common",
- "rolldown_plugin",
- "rolldown_utils",
  "rustc-hash",
  "serde_json",
  "sugar_path",
@@ -3222,10 +3310,10 @@ dependencies = [
  "anyhow",
  "base64-simd",
  "derive_more",
- "rolldown_plugin",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_sourcemap",
+ "deskulpt_rolldown_utils",
  "rolldown_plugin_utils",
- "rolldown_sourcemap",
- "rolldown_utils",
  "rustc-hash",
  "serde_json",
 ]
@@ -3239,11 +3327,11 @@ dependencies = [
  "base64-simd",
  "cow-utils",
  "derive_more",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "regex",
- "rolldown_common",
- "rolldown_plugin",
  "rolldown_plugin_utils",
- "rolldown_utils",
  "rustc-hash",
  "serde_json",
  "string_wizard",
@@ -3259,13 +3347,13 @@ dependencies = [
  "cow-utils",
  "dashmap",
  "derive_more",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_utils",
  "fast-glob",
  "owo-colors",
  "oxc_resolver",
- "rolldown_common",
- "rolldown_plugin",
  "rolldown_plugin_utils",
- "rolldown_utils",
  "rustc-hash",
  "serde",
  "serde_json",
@@ -3279,7 +3367,7 @@ name = "rolldown_plugin_wasm_fallback"
 version = "0.1.0"
 dependencies = [
  "anyhow",
- "rolldown_plugin",
+ "deskulpt_rolldown_plugin",
 ]
 
 [[package]]
@@ -3287,8 +3375,8 @@ name = "rolldown_plugin_wasm_helper"
 version = "0.1.0"
 dependencies = [
  "arcstr",
- "rolldown_common",
- "rolldown_plugin",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_plugin",
  "rolldown_plugin_utils",
 ]
 
@@ -3296,42 +3384,9 @@ dependencies = [
 name = "rolldown_plugin_web_worker_post"
 version = "0.1.0"
 dependencies = [
+ "deskulpt_rolldown_ecmascript_utils",
+ "deskulpt_rolldown_plugin",
  "oxc",
- "rolldown_ecmascript_utils",
- "rolldown_plugin",
-]
-
-[[package]]
-name = "rolldown_resolver"
-version = "0.1.0"
-dependencies = [
- "arcstr",
- "dashmap",
- "itertools",
- "oxc_resolver",
- "rolldown_common",
- "rolldown_fs",
- "rolldown_utils",
- "sugar_path",
-]
-
-[[package]]
-name = "rolldown_sourcemap"
-version = "0.1.0"
-dependencies = [
- "criterion2",
- "memchr",
- "oxc",
- "oxc_sourcemap",
- "rolldown_utils",
- "rustc-hash",
-]
-
-[[package]]
-name = "rolldown_std_utils"
-version = "0.1.0"
-dependencies = [
- "regex",
 ]
 
 [[package]]
@@ -3339,16 +3394,16 @@ name = "rolldown_testing"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "deskulpt_rolldown",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_sourcemap",
  "dunce",
  "glob",
  "insta",
  "json-strip-comments",
  "jsonschema",
  "regex",
- "rolldown",
- "rolldown_common",
- "rolldown_error",
- "rolldown_sourcemap",
  "rolldown_testing_config",
  "rolldown_workspace",
  "rustc-hash",
@@ -3363,65 +3418,10 @@ dependencies = [
 name = "rolldown_testing_config"
 version = "0.1.0"
 dependencies = [
- "rolldown_common",
+ "deskulpt_rolldown_common",
  "schemars",
  "serde",
  "serde_json",
-]
-
-[[package]]
-name = "rolldown_tracing"
-version = "0.1.0"
-dependencies = [
- "tracing",
- "tracing-chrome",
- "tracing-subscriber",
-]
-
-[[package]]
-name = "rolldown_utils"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "arcstr",
- "async-scoped",
- "base-encode",
- "base64-simd",
- "cow-utils",
- "criterion2",
- "dashmap",
- "fast-glob",
- "form_urlencoded",
- "futures",
- "indexmap",
- "infer",
- "itoa",
- "memchr",
- "mime",
- "nom",
- "oxc",
- "oxc_index",
- "phf",
- "rayon",
- "regex",
- "regress",
- "rolldown_std_utils",
- "rustc-hash",
- "serde_json",
- "simdutf8",
- "sugar_path",
- "tokio",
- "uuid",
- "xxhash-rust",
-]
-
-[[package]]
-name = "rolldown_watcher"
-version = "0.1.0"
-dependencies = [
- "notify",
- "notify-debouncer-full",
- "rolldown_error",
 ]
 
 [[package]]

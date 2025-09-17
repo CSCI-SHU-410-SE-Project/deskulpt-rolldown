@@ -1,12 +1,14 @@
 [package]
-name = "rolldown_std_utils"
+name = "deskulpt_rolldown_std_utils"
 version = "0.1.0"
+description = "[FORK] Rolldown's rolldown_std_utils crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
 
 [lib]
+name = "rolldown_std_utils"
 doctest = false
 
 [lints]

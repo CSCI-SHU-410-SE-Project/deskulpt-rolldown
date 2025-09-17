@@ -1,6 +1,7 @@
 [package]
-name = "rolldown_watcher"
+name = "deskulpt_rolldown_watcher"
 version = "0.1.0"
+description = "[FORK] Rolldown's rolldown_watcher crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
@@ -8,10 +9,13 @@ repository.workspace = true
 
 [dependencies]
 notify = { workspace = true }
-rolldown_error = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
 
 [target.'cfg(not(target_family = "wasm"))'.dependencies]
 notify-debouncer-full = { workspace = true }
 
 [lints]
 workspace = true
+
+[lib]
+name = "rolldown_watcher"

@@ -21,9 +21,9 @@ cow-utils = { workspace = true }
 itertools = { workspace = true }
 memchr = { workspace = true }
 percent-encoding = { workspace = true }
-rolldown_common = { workspace = true }
-rolldown_plugin = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 serde_json = { workspace = true }
 sugar_path = { workspace = true }

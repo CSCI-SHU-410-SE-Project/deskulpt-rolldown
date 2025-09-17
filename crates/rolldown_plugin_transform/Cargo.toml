@@ -20,8 +20,8 @@ arcstr = { workspace = true }
 itertools = { workspace = true }
 memchr = { workspace = true }
 oxc = { workspace = true }
-rolldown_common = { workspace = true }
-rolldown_error = { workspace = true }
-rolldown_plugin = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }
 rolldown_plugin_utils = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }

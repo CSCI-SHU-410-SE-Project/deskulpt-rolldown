@@ -1,0 +1,62 @@
+name: Sync Upstream
+on:
+  schedule:
+    - cron: '15 3 * * *'
+  workflow_dispatch:
+
+jobs:
+  sync-upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+        with:
+          fetch-depth: 0
+
+      - name: Git configuration
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+      - name: Update or create PR
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PR_BRANCH: "sync/upstream-main"
+          PR_TITLE: "🔄 Sync with upstream (rolldown/rolldown)"
+        run: |
+          git remote add upstream https://github.com/rolldown/rolldown.git
+          git fetch upstream
+
+          COMMITS_BEHIND=$(git rev-list --count main..upstream/main)
+          if [[ "$COMMITS_BEHIND" -eq 0 ]]; then
+            echo "✅ Fork is already up-to-date with upstream. No new commits to sync."
+
+            EXISTING_PR=$(gh pr list --repo ${{ github.repository }} --head "$PR_BRANCH" --json number -q '.[0].number')
+            if [[ -n "$EXISTING_PR" ]]; then
+              echo "Closing obsolete sync PR #$EXISTING_PR."
+              gh pr close "$EXISTING_PR" --repo ${{ github.repository }}
+            fi
+            exit 0
+          fi
+
+          echo "Fork is $COMMITS_BEHIND commit(s) behind upstream. Proceeding with sync..."
+          EXISTING_PR=$(gh pr list --repo ${{ github.repository }} --head "$PR_BRANCH" --json number -q '.[0].number')
+
+          if [[ -n "$EXISTING_PR" ]]; then
+            echo "Found existing PR #$EXISTING_PR. Updating it..."
+            git checkout -B "$PR_BRANCH" upstream/main
+            git push --force origin "$PR_BRANCH"
+            echo "✅ Successfully updated PR #$EXISTING_PR."
+
+          else
+            echo "No existing sync PR found. Creating a new one..."
+            git checkout -b "$PR_BRANCH" upstream/main
+            git push -u origin "$PR_BRANCH"
+            gh pr create \
+              --repo ${{ github.repository }} \
+              --base "main" \
+              --head "$PR_BRANCH" \
+              --title "$PR_TITLE" \
+              --body "Sync the main branch with the latest changes from upstream (rolldown/rolldown)."
+            echo "✅ Pull request created."
+          fi

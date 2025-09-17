@@ -1,17 +1,21 @@
 [package]
-name = "rolldown_plugin_chunk_import_map"
+name = "deskulpt_rolldown_plugin_chunk_import_map"
 version = "0.1.0"
-edition = "2021"
-license = "MIT"
+description = "[FORK] Rolldown's rolldown_plugin_chunk_import_map crate."
+edition.workspace = true
+homepage.workspace = true
+license.workspace = true
+repository.workspace = true
 
 [lib]
+name = "rolldown_plugin_chunk_import_map"
 doctest = false
 
 [dependencies]
 arcstr = { workspace = true }
-rolldown_common = { workspace = true }
-rolldown_plugin = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 serde_json = { workspace = true }
 xxhash-rust = { workspace = true, features = ["xxh3"] }

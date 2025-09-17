@@ -1,6 +1,7 @@
 [package]
-name = "rolldown"
+name = "deskulpt_rolldown"
 version = "0.1.0"
+description = "[FORK] Rolldown's rolldown crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
@@ -9,6 +10,7 @@ repository.workspace = true
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
 [lib]
+name = "rolldown"
 doctest = false
 
 [lints]
@@ -40,23 +42,23 @@ oxc_index = { workspace = true }
 oxc_traverse = { workspace = true }
 petgraph = { workspace = true }
 rayon = { workspace = true }
-rolldown_common = { workspace = true }
-rolldown_debug = { workspace = true }
-rolldown_ecmascript = { workspace = true }
-rolldown_ecmascript_utils = { workspace = true }
-rolldown_error = { workspace = true }
-rolldown_fs = { workspace = true, features = ["os"] }
-rolldown_plugin = { workspace = true }
-rolldown_plugin_chunk_import_map = { workspace = true }
-rolldown_plugin_data_uri = { workspace = true }
-rolldown_plugin_hmr = { workspace = true }
-rolldown_plugin_oxc_runtime = { workspace = true }
-rolldown_resolver = { workspace = true }
-rolldown_sourcemap = { workspace = true }
-rolldown_std_utils = { workspace = true }
-rolldown_tracing = { workspace = true }
-rolldown_utils = { workspace = true }
-rolldown_watcher = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_debug = { workspace = true }
+deskulpt_rolldown_ecmascript = { workspace = true }
+deskulpt_rolldown_ecmascript_utils = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
+deskulpt_rolldown_fs = { workspace = true, features = ["os"] }
+deskulpt_rolldown_plugin = { workspace = true }
+deskulpt_rolldown_plugin_chunk_import_map = { workspace = true }
+deskulpt_rolldown_plugin_data_uri = { workspace = true }
+deskulpt_rolldown_plugin_hmr = { workspace = true }
+deskulpt_rolldown_plugin_oxc_runtime = { workspace = true }
+deskulpt_rolldown_resolver = { workspace = true }
+deskulpt_rolldown_sourcemap = { workspace = true }
+deskulpt_rolldown_std_utils = { workspace = true }
+deskulpt_rolldown_tracing = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
+deskulpt_rolldown_watcher = { workspace = true }
 rustc-hash = { workspace = true }
 serde = { workspace = true, optional = true }
 serde_json = { workspace = true }

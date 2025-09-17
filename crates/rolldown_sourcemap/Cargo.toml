@@ -1,9 +1,7 @@
 [package]
-name = "rolldown_sourcemap"
+name = "deskulpt_rolldown_sourcemap"
 version = "0.1.0"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
+description = "[FORK] Rolldown's rolldown_sourcemap crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
@@ -13,6 +11,7 @@ repository.workspace = true
 workspace = true
 
 [lib]
+name = "rolldown_sourcemap"
 bench = false
 doctest = false
 
@@ -20,7 +19,7 @@ doctest = false
 memchr = { workspace = true }
 oxc = { workspace = true }
 oxc_sourcemap = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 
 [dev-dependencies]

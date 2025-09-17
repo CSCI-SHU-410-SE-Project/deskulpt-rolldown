@@ -1,6 +1,7 @@
 [package]
-name = "rolldown_ecmascript_utils"
+name = "deskulpt_rolldown_ecmascript_utils"
 version = "0.1.0"
+description = "[FORK] Rolldown's rolldown_ecmascript_utils crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
@@ -10,9 +11,10 @@ repository.workspace = true
 workspace = true
 
 [lib]
+name = "rolldown_ecmascript_utils"
 doctest = false
 
 [dependencies]
 oxc = { workspace = true }
-rolldown_common = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
 smallvec = { workspace = true }

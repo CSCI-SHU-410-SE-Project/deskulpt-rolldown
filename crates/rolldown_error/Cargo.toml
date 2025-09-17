@@ -1,16 +1,14 @@
 [package]
-name = "rolldown_error"
+name = "deskulpt_rolldown_error"
 version = "0.1.0"
-description = "rolldown_error"
-
-# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
-
+description = "[FORK] Rolldown's rolldown_error crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
 
 [lib]
+name = "rolldown_error"
 doctest = false
 
 [lints]
@@ -26,7 +24,7 @@ heck = { workspace = true }
 napi = { workspace = true, optional = true }
 oxc = { workspace = true }
 oxc_resolver = { workspace = true }
-rolldown_utils = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 ropey = { workspace = true }
 rustc-hash = { workspace = true }
 sugar_path = { workspace = true }
