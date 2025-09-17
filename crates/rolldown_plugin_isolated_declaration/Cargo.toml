@@ -16,13 +16,13 @@ workspace = true
 
 [dependencies]
 arcstr = { workspace = true }
-oxc = { workspace = true }
 deskulpt_rolldown_common = { workspace = true }
 deskulpt_rolldown_error = { workspace = true }
 deskulpt_rolldown_plugin = { workspace = true }
 deskulpt_rolldown_utils = { workspace = true }
+oxc = { workspace = true }
 sugar_path = { workspace = true }
 
 [dev-dependencies]
-rolldown_testing = { workspace = true }
+deskulpt_rolldown_testing = { workspace = true }
 testing_macros = { workspace = true }

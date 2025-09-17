@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown_sourcemap"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_sourcemap crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_sourcemap crate."
 
 [lints]
 workspace = true
@@ -16,10 +16,10 @@ bench = false
 doctest = false
 
 [dependencies]
+deskulpt_rolldown_utils = { workspace = true }
 memchr = { workspace = true }
 oxc = { workspace = true }
 oxc_sourcemap = { workspace = true }
-deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 
 [dev-dependencies]

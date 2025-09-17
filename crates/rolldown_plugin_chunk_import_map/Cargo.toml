@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown_plugin_chunk_import_map"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_plugin_chunk_import_map crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_plugin_chunk_import_map crate."
 
 [lib]
 name = "rolldown_plugin_chunk_import_map"

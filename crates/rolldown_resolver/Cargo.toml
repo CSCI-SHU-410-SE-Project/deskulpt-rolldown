@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown_resolver"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_resolver crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_resolver crate."
 
 [lib]
 name = "rolldown_resolver"
@@ -17,9 +17,9 @@ workspace = true
 [dependencies]
 arcstr = { workspace = true }
 dashmap = { workspace = true }
-itertools = { workspace = true }
-oxc_resolver = { workspace = true }
 deskulpt_rolldown_common = { workspace = true }
 deskulpt_rolldown_fs = { workspace = true, features = ["os"] }
 deskulpt_rolldown_utils = { workspace = true }
+itertools = { workspace = true }
+oxc_resolver = { workspace = true }
 sugar_path = { workspace = true }

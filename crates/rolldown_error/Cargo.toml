@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown_error"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_error crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_error crate."
 
 [lib]
 name = "rolldown_error"
@@ -20,11 +20,11 @@ arcstr = { workspace = true }
 ariadne = { workspace = true }
 bitflags = { workspace = true }
 derive_more = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 heck = { workspace = true }
 napi = { workspace = true, optional = true }
 oxc = { workspace = true }
 oxc_resolver = { workspace = true }
-deskulpt_rolldown_utils = { workspace = true }
 ropey = { workspace = true }
 rustc-hash = { workspace = true }
 sugar_path = { workspace = true }

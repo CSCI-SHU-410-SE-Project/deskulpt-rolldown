@@ -13,5 +13,5 @@ workspace = true
 doctest = false
 
 [dependencies]
-oxc = { workspace = true }
 deskulpt_rolldown_ecmascript = { workspace = true }
+oxc = { workspace = true }

@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown_plugin"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_plugin crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_plugin crate."
 
 [lib]
 name = "rolldown_plugin"
@@ -25,18 +25,18 @@ async-trait = { workspace = true }
 bitflags = { workspace = true }
 dashmap = { workspace = true }
 derive_more = { workspace = true, features = ["display"] }
-oxc_index = { workspace = true }
 deskulpt_rolldown_common = { workspace = true }
 deskulpt_rolldown_debug = { workspace = true }
 deskulpt_rolldown_ecmascript = { workspace = true }
 deskulpt_rolldown_error = { workspace = true }
 deskulpt_rolldown_resolver = { workspace = true }
 deskulpt_rolldown_sourcemap = { workspace = true }
+deskulpt_rolldown_string_wizard = { workspace = true }
 deskulpt_rolldown_utils = { workspace = true }
+oxc_index = { workspace = true }
 rustc-hash = { workspace = true }
 serde = { workspace = true, optional = true }
 serde_json = { workspace = true }
-deskulpt_rolldown_string_wizard = { workspace = true }
 sugar_path = { workspace = true }
 tokio = { workspace = true, features = ["sync"] }
 tracing = { workspace = true, features = ["valuable"] }

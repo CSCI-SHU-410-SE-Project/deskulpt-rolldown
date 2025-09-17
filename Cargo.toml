@@ -81,7 +81,6 @@ collapsible_if = "allow"
 criterion2 = { version = "3.0.0", default-features = false }
 css-module-lexer = "0.0.15"
 deskulpt_rolldown = { version = "0.1.0", path = "./crates/rolldown" }
-rolldown_binding_watcher = { version = "0.1.0", path = "./crates/rolldown_binding_watcher" }
 deskulpt_rolldown_common = { version = "0.1.0", path = "./crates/rolldown_common" }
 deskulpt_rolldown_debug = { version = "0.1.0", path = "./crates/rolldown_debug" }
 deskulpt_rolldown_debug_action = { version = "0.1.0", path = "./crates/rolldown_debug_action" }
@@ -90,22 +89,33 @@ deskulpt_rolldown_ecmascript_utils = { version = "0.1.0", path = "./crates/rolld
 deskulpt_rolldown_error = { version = "0.1.0", path = "./crates/rolldown_error" }
 deskulpt_rolldown_fs = { version = "0.1.0", path = "./crates/rolldown_fs" }
 deskulpt_rolldown_plugin = { version = "0.1.0", path = "./crates/rolldown_plugin" }
+deskulpt_rolldown_plugin_chunk_import_map = { version = "0.1.0", path = "./crates/rolldown_plugin_chunk_import_map" }
+deskulpt_rolldown_plugin_data_uri = { version = "0.1.0", path = "./crates/rolldown_plugin_data_uri" }
+deskulpt_rolldown_plugin_hmr = { version = "0.1.0", path = "./crates/rolldown_plugin_hmr" }
+deskulpt_rolldown_plugin_oxc_runtime = { version = "0.1.0", path = "./crates/rolldown_plugin_oxc_runtime" }
+deskulpt_rolldown_resolver = { version = "0.1.0", path = "./crates/rolldown_resolver" }
+deskulpt_rolldown_sourcemap = { version = "0.1.0", path = "./crates/rolldown_sourcemap" }
+deskulpt_rolldown_std_utils = { version = "0.1.0", path = "./crates/rolldown_std_utils" }
+deskulpt_rolldown_string_wizard = { version = "0.1.0", path = "./crates/string_wizard", features = ["serde"] }
+deskulpt_rolldown_testing = { version = "0.1.0", path = "./crates/rolldown_testing" }
+deskulpt_rolldown_testing_config = { version = "0.1.0", path = "./crates/rolldown_testing_config" }
+deskulpt_rolldown_tracing = { version = "0.1.0", path = "./crates/rolldown_tracing" }
+deskulpt_rolldown_utils = { version = "0.1.0", path = "./crates/rolldown_utils" }
+deskulpt_rolldown_watcher = { version = "0.1.0", path = "./crates/rolldown_watcher" }
+deskulpt_rolldown_workspace = { version = "0.1.0", path = "./crates/rolldown_workspace" }
+rolldown_binding_watcher = { version = "0.1.0", path = "./crates/rolldown_binding_watcher" }
 rolldown_plugin_alias = { version = "0.1.0", path = "./crates/rolldown_plugin_alias" }
 rolldown_plugin_asset = { version = "0.1.0", path = "./crates/rolldown_plugin_asset" }
 rolldown_plugin_asset_import_meta_url = { version = "0.1.0", path = "./crates/rolldown_plugin_asset_import_meta_url" }
 rolldown_plugin_build_import_analysis = { version = "0.1.0", path = "./crates/rolldown_plugin_build_import_analysis" }
-deskulpt_rolldown_plugin_chunk_import_map = { version = "0.1.0", path = "./crates/rolldown_plugin_chunk_import_map" }
-deskulpt_rolldown_plugin_data_uri = { version = "0.1.0", path = "./crates/rolldown_plugin_data_uri" }
 rolldown_plugin_dynamic_import_vars = { version = "0.0.1", path = "./crates/rolldown_plugin_dynamic_import_vars" }
 rolldown_plugin_esm_external_require = { version = "0.1.0", path = "./crates/rolldown_plugin_esm_external_require" }
-deskulpt_rolldown_plugin_hmr = { version = "0.1.0", path = "./crates/rolldown_plugin_hmr" }
 rolldown_plugin_import_glob = { version = "0.1.0", path = "./crates/rolldown_plugin_import_glob" }
 rolldown_plugin_isolated_declaration = { version = "0.1.0", path = "./crates/rolldown_plugin_isolated_declaration" }
 rolldown_plugin_json = { version = "0.1.0", path = "./crates/rolldown_plugin_json" }
 rolldown_plugin_load_fallback = { version = "0.1.0", path = "./crates/rolldown_plugin_load_fallback" }
 rolldown_plugin_manifest = { version = "0.1.0", path = "./crates/rolldown_plugin_manifest" }
 rolldown_plugin_module_preload_polyfill = { version = "0.1.0", path = "./crates/rolldown_plugin_module_preload_polyfill" }
-deskulpt_rolldown_plugin_oxc_runtime = { version = "0.1.0", path = "./crates/rolldown_plugin_oxc_runtime" }
 rolldown_plugin_react_refresh_wrapper = { version = "0.1.0", path = "./crates/rolldown_plugin_react_refresh_wrapper" }
 rolldown_plugin_replace = { version = "0.1.0", path = "./crates/rolldown_plugin_replace" }
 rolldown_plugin_reporter = { version = "0.1.0", path = "./crates/rolldown_plugin_reporter" }
@@ -115,17 +125,6 @@ rolldown_plugin_vite_resolve = { version = "0.1.0", path = "./crates/rolldown_pl
 rolldown_plugin_wasm_fallback = { version = "0.1.0", path = "./crates/rolldown_plugin_wasm_fallback" }
 rolldown_plugin_wasm_helper = { version = "0.1.0", path = "./crates/rolldown_plugin_wasm_helper" }
 rolldown_plugin_web_worker_post = { version = "0.1.0", path = "./crates/rolldown_plugin_web_worker_post" }
-deskulpt_rolldown_resolver = { version = "0.1.0", path = "./crates/rolldown_resolver" }
-deskulpt_rolldown_sourcemap = { version = "0.1.0", path = "./crates/rolldown_sourcemap" }
-deskulpt_rolldown_std_utils = { version = "0.1.0", path = "./crates/rolldown_std_utils" }
-rolldown_testing = { version = "0.1.0", path = "./crates/rolldown_testing" }
-rolldown_testing_config = { version = "0.1.0", path = "./crates/rolldown_testing_config" }
-deskulpt_rolldown_tracing = { version = "0.1.0", path = "./crates/rolldown_tracing" }
-deskulpt_rolldown_utils = { version = "0.1.0", path = "./crates/rolldown_utils" }
-deskulpt_rolldown_watcher = { version = "0.1.0", path = "./crates/rolldown_watcher" }
-rolldown_workspace = { version = "0.1.0", path = "./crates/rolldown_workspace" }
-deskulpt_rolldown_string_wizard = { version = "0.1.0", path = "./crates/string_wizard", features = ["serde"] }
-
 
 anyhow = "1.0.98"
 append-only-vec = "0.1.7"

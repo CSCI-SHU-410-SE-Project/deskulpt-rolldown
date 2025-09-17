@@ -16,12 +16,12 @@ workspace = true
 
 [dependencies]
 cow-utils = { workspace = true }
+deskulpt_rolldown_common = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }
 flate2 = { workspace = true }
 itoa = { workspace = true }
 num-format = { workspace = true }
 rayon = { workspace = true }
-deskulpt_rolldown_common = { workspace = true }
-deskulpt_rolldown_plugin = { workspace = true }
 rolldown_plugin_utils = { workspace = true }
 sugar_path = { workspace = true }
 terminal_size = { workspace = true }

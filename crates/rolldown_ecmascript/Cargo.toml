@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown_ecmascript"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_ecmascript crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_ecmascript crate."
 
 [lib]
 name = "rolldown_ecmascript"
@@ -16,7 +16,7 @@ workspace = true
 
 [dependencies]
 arcstr = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
 oxc = { workspace = true }
 oxc_sourcemap = { workspace = true }
-deskulpt_rolldown_error = { workspace = true }
 self_cell = { workspace = true }

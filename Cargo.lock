@@ -175,8 +175,8 @@ dependencies = [
  "criterion2",
  "deskulpt_rolldown",
  "deskulpt_rolldown_common",
- "rolldown_testing",
- "rolldown_workspace",
+ "deskulpt_rolldown_testing",
+ "deskulpt_rolldown_workspace",
  "tokio",
 ]
 
@@ -674,9 +674,11 @@ dependencies = [
  "deskulpt_rolldown_sourcemap",
  "deskulpt_rolldown_std_utils",
  "deskulpt_rolldown_string_wizard",
+ "deskulpt_rolldown_testing",
  "deskulpt_rolldown_tracing",
  "deskulpt_rolldown_utils",
  "deskulpt_rolldown_watcher",
+ "deskulpt_rolldown_workspace",
  "dunce",
  "futures",
  "glob",
@@ -693,8 +695,6 @@ dependencies = [
  "oxc_traverse",
  "petgraph",
  "rayon",
- "rolldown_testing",
- "rolldown_workspace",
  "rustc-hash",
  "serde",
  "serde_json",
@@ -924,6 +924,41 @@ dependencies = [
 ]
 
 [[package]]
+name = "deskulpt_rolldown_testing"
+version = "0.1.0"
+dependencies = [
+ "anyhow",
+ "deskulpt_rolldown",
+ "deskulpt_rolldown_common",
+ "deskulpt_rolldown_error",
+ "deskulpt_rolldown_sourcemap",
+ "deskulpt_rolldown_testing_config",
+ "deskulpt_rolldown_workspace",
+ "dunce",
+ "glob",
+ "insta",
+ "json-strip-comments",
+ "jsonschema",
+ "regex",
+ "rustc-hash",
+ "schemars",
+ "serde_json",
+ "sugar_path",
+ "tokio",
+ "urlencoding",
+]
+
+[[package]]
+name = "deskulpt_rolldown_testing_config"
+version = "0.1.0"
+dependencies = [
+ "deskulpt_rolldown_common",
+ "schemars",
+ "serde",
+ "serde_json",
+]
+
+[[package]]
 name = "deskulpt_rolldown_tracing"
 version = "0.1.0"
 dependencies = [
@@ -977,6 +1012,10 @@ dependencies = [
  "notify",
  "notify-debouncer-full",
 ]
+
+[[package]]
+name = "deskulpt_rolldown_workspace"
+version = "0.1.0"
 
 [[package]]
 name = "digest"
@@ -1333,13 +1372,13 @@ version = "0.1.0"
 dependencies = [
  "anyhow",
  "cow-utils",
+ "deskulpt_rolldown_workspace",
  "heck",
  "oxc",
  "prettyplease",
  "proc-macro2",
  "quote",
  "regex",
- "rolldown_workspace",
  "syn",
 ]
 
@@ -1794,10 +1833,10 @@ name = "ls-lint"
 version = "0.1.0"
 dependencies = [
  "anyhow",
+ "deskulpt_rolldown_workspace",
  "globset",
  "heck",
  "ignore",
- "rolldown_workspace",
  "serde",
  "serde_json",
 ]
@@ -3188,9 +3227,9 @@ dependencies = [
  "deskulpt_rolldown_common",
  "deskulpt_rolldown_error",
  "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_testing",
  "deskulpt_rolldown_utils",
  "oxc",
- "rolldown_testing",
  "sugar_path",
  "testing_macros",
 ]
@@ -3260,10 +3299,10 @@ dependencies = [
  "deskulpt_rolldown",
  "deskulpt_rolldown_plugin",
  "deskulpt_rolldown_string_wizard",
+ "deskulpt_rolldown_testing",
  "oxc",
  "regex",
  "regress",
- "rolldown_testing",
  "rustc-hash",
  "tokio",
 ]
@@ -3403,45 +3442,6 @@ dependencies = [
  "deskulpt_rolldown_plugin",
  "oxc",
 ]
-
-[[package]]
-name = "rolldown_testing"
-version = "0.1.0"
-dependencies = [
- "anyhow",
- "deskulpt_rolldown",
- "deskulpt_rolldown_common",
- "deskulpt_rolldown_error",
- "deskulpt_rolldown_sourcemap",
- "dunce",
- "glob",
- "insta",
- "json-strip-comments",
- "jsonschema",
- "regex",
- "rolldown_testing_config",
- "rolldown_workspace",
- "rustc-hash",
- "schemars",
- "serde_json",
- "sugar_path",
- "tokio",
- "urlencoding",
-]
-
-[[package]]
-name = "rolldown_testing_config"
-version = "0.1.0"
-dependencies = [
- "deskulpt_rolldown_common",
- "schemars",
- "serde",
- "serde_json",
-]
-
-[[package]]
-name = "rolldown_workspace"
-version = "0.1.0"
 
 [[package]]
 name = "ropey"

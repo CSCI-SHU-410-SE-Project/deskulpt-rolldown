@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown_common"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_common crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_common crate."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -22,22 +22,22 @@ arcstr = { workspace = true }
 bitflags = { workspace = true }
 dashmap = { workspace = true }
 derive_more = { workspace = true }
+deskulpt_rolldown_ecmascript = { workspace = true }
+deskulpt_rolldown_error = { workspace = true }
+deskulpt_rolldown_sourcemap = { workspace = true }
+deskulpt_rolldown_std_utils = { workspace = true }
+deskulpt_rolldown_string_wizard = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 fast-glob = { workspace = true }
 itertools = { workspace = true }
 oxc = { workspace = true }
 oxc_ecmascript = { workspace = true }
 oxc_index = { workspace = true }
 oxc_resolver = { workspace = true }
-deskulpt_rolldown_ecmascript = { workspace = true }
-deskulpt_rolldown_error = { workspace = true }
-deskulpt_rolldown_sourcemap = { workspace = true }
-deskulpt_rolldown_std_utils = { workspace = true }
-deskulpt_rolldown_utils = { workspace = true }
 rustc-hash = { workspace = true }
 schemars = { workspace = true, optional = true }
 serde = { workspace = true, features = ["derive"], optional = true }
 serde_json = { workspace = true }
-deskulpt_rolldown_string_wizard = { workspace = true }
 sugar_path = { workspace = true }
 tokio = { workspace = true }
 

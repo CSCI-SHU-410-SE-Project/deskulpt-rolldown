@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown_debug"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_debug crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_debug crate."
 
 [lints]
 workspace = true

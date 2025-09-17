@@ -15,12 +15,12 @@ doctest = false
 workspace = true
 
 [dependencies]
+deskulpt_rolldown_ecmascript_utils = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 fast-glob = { workspace = true }
 itoa = { workspace = true }
 oxc = { workspace = true }
-deskulpt_rolldown_ecmascript_utils = { workspace = true }
-deskulpt_rolldown_plugin = { workspace = true }
 rolldown_plugin_utils = { workspace = true }
-deskulpt_rolldown_utils = { workspace = true }
 sugar_path = { workspace = true }
 walkdir = { workspace = true }

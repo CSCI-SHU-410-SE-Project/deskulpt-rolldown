@@ -1,11 +1,11 @@
 [package]
 name = "deskulpt_rolldown"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown crate."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 
@@ -28,20 +28,6 @@ bitflags = { workspace = true }
 commondir = { workspace = true }
 css-module-lexer = { workspace = true }
 derive_more = { workspace = true }
-dunce = { workspace = true }
-futures = { workspace = true }
-indexmap = { workspace = true }
-itertools = { workspace = true }
-itoa = { workspace = true }
-memchr = { workspace = true }
-notify = { workspace = true }
-oxc = { workspace = true }
-oxc_allocator = { workspace = true }
-oxc_ecmascript = { workspace = true }
-oxc_index = { workspace = true }
-oxc_traverse = { workspace = true }
-petgraph = { workspace = true }
-rayon = { workspace = true }
 deskulpt_rolldown_common = { workspace = true }
 deskulpt_rolldown_debug = { workspace = true }
 deskulpt_rolldown_ecmascript = { workspace = true }
@@ -56,13 +42,27 @@ deskulpt_rolldown_plugin_oxc_runtime = { workspace = true }
 deskulpt_rolldown_resolver = { workspace = true }
 deskulpt_rolldown_sourcemap = { workspace = true }
 deskulpt_rolldown_std_utils = { workspace = true }
+deskulpt_rolldown_string_wizard = { workspace = true }
 deskulpt_rolldown_tracing = { workspace = true }
 deskulpt_rolldown_utils = { workspace = true }
 deskulpt_rolldown_watcher = { workspace = true }
+dunce = { workspace = true }
+futures = { workspace = true }
+indexmap = { workspace = true }
+itertools = { workspace = true }
+itoa = { workspace = true }
+memchr = { workspace = true }
+notify = { workspace = true }
+oxc = { workspace = true }
+oxc_allocator = { workspace = true }
+oxc_ecmascript = { workspace = true }
+oxc_index = { workspace = true }
+oxc_traverse = { workspace = true }
+petgraph = { workspace = true }
+rayon = { workspace = true }
 rustc-hash = { workspace = true }
 serde = { workspace = true, optional = true }
 serde_json = { workspace = true }
-deskulpt_rolldown_string_wizard = { workspace = true }
 sugar_path = { workspace = true }
 tokio = { workspace = true, features = ["rt", "macros", "sync", "time"] }
 tracing = { workspace = true }
@@ -70,10 +70,10 @@ url = { workspace = true }
 xxhash-rust = { workspace = true, features = ["xxh3"] }
 
 [dev-dependencies]
+deskulpt_rolldown_testing = { workspace = true }
+deskulpt_rolldown_workspace = { workspace = true }
 glob = { workspace = true }
 insta = { workspace = true }
-rolldown_testing = { workspace = true }
-rolldown_workspace = { workspace = true }
 sugar_path = { workspace = true }
 testing_macros = { workspace = true }
 tokio = { workspace = true, features = ["rt", "macros", "sync", "rt-multi-thread"] }

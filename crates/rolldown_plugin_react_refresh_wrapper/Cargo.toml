@@ -14,8 +14,8 @@ doctest = false
 
 [dependencies]
 arcstr = { workspace = true }
+deskulpt_rolldown_plugin = { workspace = true }
+deskulpt_rolldown_utils = { workspace = true }
 memchr = { workspace = true }
 regex = { workspace = true }
-deskulpt_rolldown_plugin = { workspace = true }
 rolldown_plugin_utils = { workspace = true }
-deskulpt_rolldown_utils = { workspace = true }

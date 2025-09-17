@@ -8,10 +8,10 @@ repository.workspace = true
 
 [dependencies]
 anyhow = { workspace = true }
+deskulpt_rolldown_workspace = { workspace = true }
 globset = "0.4"
 heck = { workspace = true }
 ignore = "0.4"
-rolldown_workspace = { workspace = true }
 serde = { workspace = true }
 serde_json = { workspace = true }
 

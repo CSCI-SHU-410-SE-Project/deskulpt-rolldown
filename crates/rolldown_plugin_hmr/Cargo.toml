@@ -1,17 +1,17 @@
 [package]
 name = "deskulpt_rolldown_plugin_hmr"
 version = "0.1.0"
-description = "[FORK] Rolldown's rolldown_plugin_hmr crate."
 edition.workspace = true
 homepage.workspace = true
 license.workspace = true
 repository.workspace = true
+description = "[FORK] Rolldown's rolldown_plugin_hmr crate."
 
 [dependencies]
 arcstr = { workspace = true }
-oxc = { workspace = true }
 deskulpt_rolldown_common = { workspace = true }
 deskulpt_rolldown_plugin = { workspace = true }
+oxc = { workspace = true }
 
 [lints]
 workspace = true

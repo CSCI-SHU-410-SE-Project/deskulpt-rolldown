@@ -13,14 +13,14 @@ workspace = true
 doctest = false
 
 [dependencies]
+deskulpt_rolldown_plugin = { path = "../rolldown_plugin" }
+deskulpt_rolldown_string_wizard = { workspace = true }
 oxc = { workspace = true }
 regex = { workspace = true }
 regress = { workspace = true }
-deskulpt_rolldown_plugin = { path = "../rolldown_plugin" }
 rustc-hash = { workspace = true }
-deskulpt_rolldown_string_wizard = { workspace = true }
 
 [dev-dependencies]
 deskulpt_rolldown = { workspace = true }
-rolldown_testing = { workspace = true }
+deskulpt_rolldown_testing = { workspace = true }
 tokio = { workspace = true, features = ["rt", "macros", "sync", "rt-multi-thread"] }
