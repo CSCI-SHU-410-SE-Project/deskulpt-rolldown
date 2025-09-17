@@ -18,7 +18,7 @@ regex = { workspace = true }
 regress = { workspace = true }
 deskulpt_rolldown_plugin = { path = "../rolldown_plugin" }
 rustc-hash = { workspace = true }
-string_wizard = { workspace = true }
+deskulpt_rolldown_string_wizard = { workspace = true }
 
 [dev-dependencies]
 deskulpt_rolldown = { workspace = true }

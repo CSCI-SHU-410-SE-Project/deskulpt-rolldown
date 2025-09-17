@@ -673,6 +673,7 @@ dependencies = [
  "deskulpt_rolldown_resolver",
  "deskulpt_rolldown_sourcemap",
  "deskulpt_rolldown_std_utils",
+ "deskulpt_rolldown_string_wizard",
  "deskulpt_rolldown_tracing",
  "deskulpt_rolldown_utils",
  "deskulpt_rolldown_watcher",
@@ -697,7 +698,6 @@ dependencies = [
  "rustc-hash",
  "serde",
  "serde_json",
- "string_wizard",
  "sugar_path",
  "testing_macros",
  "tokio",
@@ -719,6 +719,7 @@ dependencies = [
  "deskulpt_rolldown_error",
  "deskulpt_rolldown_sourcemap",
  "deskulpt_rolldown_std_utils",
+ "deskulpt_rolldown_string_wizard",
  "deskulpt_rolldown_utils",
  "fast-glob",
  "itertools",
@@ -731,7 +732,6 @@ dependencies = [
  "schemars",
  "serde",
  "serde_json",
- "string_wizard",
  "sugar_path",
  "tokio",
 ]
@@ -813,12 +813,12 @@ dependencies = [
  "deskulpt_rolldown_error",
  "deskulpt_rolldown_resolver",
  "deskulpt_rolldown_sourcemap",
+ "deskulpt_rolldown_string_wizard",
  "deskulpt_rolldown_utils",
  "oxc_index",
  "rustc-hash",
  "serde",
  "serde_json",
- "string_wizard",
  "sugar_path",
  "tokio",
  "tracing",
@@ -902,6 +902,17 @@ name = "deskulpt_rolldown_std_utils"
 version = "0.1.0"
 dependencies = [
  "regex",
+]
+
+[[package]]
+name = "deskulpt_rolldown_string_wizard"
+version = "0.1.0"
+dependencies = [
+ "insta",
+ "oxc_index",
+ "oxc_sourcemap",
+ "rustc-hash",
+ "serde",
 ]
 
 [[package]]
@@ -3244,12 +3255,12 @@ version = "0.1.0"
 dependencies = [
  "deskulpt_rolldown",
  "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_string_wizard",
  "oxc",
  "regex",
  "regress",
  "rolldown_testing",
  "rustc-hash",
- "string_wizard",
  "tokio",
 ]
 
@@ -3329,12 +3340,12 @@ dependencies = [
  "derive_more",
  "deskulpt_rolldown_common",
  "deskulpt_rolldown_plugin",
+ "deskulpt_rolldown_string_wizard",
  "deskulpt_rolldown_utils",
  "regex",
  "rolldown_plugin_utils",
  "rustc-hash",
  "serde_json",
- "string_wizard",
  "sugar_path",
 ]
 
@@ -3687,17 +3698,6 @@ name = "str_indices"
 version = "0.4.4"
 source = "registry+https://github.com/rust-lang/crates.io-index"
 checksum = "d08889ec5408683408db66ad89e0e1f93dff55c73a4ccc71c427d5b277ee47e6"
-
-[[package]]
-name = "string_wizard"
-version = "0.0.26"
-dependencies = [
- "insta",
- "oxc_index",
- "oxc_sourcemap",
- "rustc-hash",
- "serde",
-]
 
 [[package]]
 name = "sugar_path"

@@ -62,7 +62,7 @@ deskulpt_rolldown_watcher = { workspace = true }
 rustc-hash = { workspace = true }
 serde = { workspace = true, optional = true }
 serde_json = { workspace = true }
-string_wizard = { workspace = true }
+deskulpt_rolldown_string_wizard = { workspace = true }
 sugar_path = { workspace = true }
 tokio = { workspace = true, features = ["rt", "macros", "sync", "time"] }
 tracing = { workspace = true }
