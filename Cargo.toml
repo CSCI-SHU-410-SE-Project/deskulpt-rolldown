@@ -97,7 +97,7 @@ deskulpt_rolldown_resolver = { version = "0.1.0", path = "./crates/rolldown_reso
 deskulpt_rolldown_sourcemap = { version = "0.1.0", path = "./crates/rolldown_sourcemap" }
 deskulpt_rolldown_std_utils = { version = "0.1.0", path = "./crates/rolldown_std_utils" }
 deskulpt_rolldown_string_wizard = { version = "0.1.0", path = "./crates/string_wizard", features = ["serde"] }
-deskulpt_rolldown_testing = { version = "0.1.0", path = "./crates/rolldown_testing" }
+deskulpt_rolldown_testing = { path = "./crates/rolldown_testing" }
 deskulpt_rolldown_testing_config = { version = "0.1.0", path = "./crates/rolldown_testing_config" }
 deskulpt_rolldown_tracing = { version = "0.1.0", path = "./crates/rolldown_tracing" }
 deskulpt_rolldown_utils = { version = "0.1.0", path = "./crates/rolldown_utils" }
