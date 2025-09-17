@@ -70,7 +70,7 @@ url = { workspace = true }
 xxhash-rust = { workspace = true, features = ["xxh3"] }
 
 [dev-dependencies]
-deskulpt_rolldown_testing = { workspace = true }
+deskulpt_rolldown_testing = { path = "../rolldown_testing" } # Avoid cyclic dependency when publishing
 deskulpt_rolldown_workspace = { workspace = true }
 glob = { workspace = true }
 insta = { workspace = true }
