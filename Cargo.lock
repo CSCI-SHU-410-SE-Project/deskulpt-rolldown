@@ -742,12 +742,20 @@ version = "0.1.0"
 dependencies = [
  "blake3",
  "dashmap",
- "rolldown_debug_action",
+ "deskulpt_rolldown_debug_action",
  "rustc-hash",
  "serde",
  "serde_json",
  "tracing",
  "tracing-subscriber",
+]
+
+[[package]]
+name = "deskulpt_rolldown_debug_action"
+version = "0.1.0"
+dependencies = [
+ "serde",
+ "ts-rs",
 ]
 
 [[package]]
@@ -3077,14 +3085,6 @@ dependencies = [
  "napi",
  "napi-build",
  "napi-derive",
-]
-
-[[package]]
-name = "rolldown_debug_action"
-version = "0.1.0"
-dependencies = [
- "serde",
- "ts-rs",
 ]
 
 [[package]]

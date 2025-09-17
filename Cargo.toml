@@ -84,7 +84,7 @@ deskulpt_rolldown = { version = "0.1.0", path = "./crates/rolldown" }
 rolldown_binding_watcher = { version = "0.1.0", path = "./crates/rolldown_binding_watcher" }
 deskulpt_rolldown_common = { version = "0.1.0", path = "./crates/rolldown_common" }
 deskulpt_rolldown_debug = { version = "0.1.0", path = "./crates/rolldown_debug" }
-rolldown_debug_action = { version = "0.1.0", path = "./crates/rolldown_debug_action" }
+deskulpt_rolldown_debug_action = { version = "0.1.0", path = "./crates/rolldown_debug_action" }
 deskulpt_rolldown_ecmascript = { version = "0.1.0", path = "./crates/rolldown_ecmascript" }
 deskulpt_rolldown_ecmascript_utils = { version = "0.1.0", path = "./crates/rolldown_ecmascript_utils" }
 deskulpt_rolldown_error = { version = "0.1.0", path = "./crates/rolldown_error" }
